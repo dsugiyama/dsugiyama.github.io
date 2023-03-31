@@ -1,0 +1,58 @@
+---
+layout: post
+title:  "このブログの作られかた"
+date:   2023-04-01 03:17:00 +0900
+---
+
+半分自分向けのメモ。
+
+最初ははてなブログで書こうとしていて、広告出したくないから Pro 契約するかなと思ってカード情報の登録までやったんだけど、あと 1 クリックで契約というところで思いとどまってしまった。仮に書くのに飽きたとして、既存の記事を公開し続けるだけで月 600 円とか掛かるのは微妙かもって。サーバー維持費を考えればそれが道理なんだけど。
+
+今の時代にブログを作る方法としては、静的サイトジェネレーター (SSG) を使って Markdown でコンテンツを書き、ビルドした成果物をサーバーにホストさせるというのがメジャーらしい。多少の手間はあるものの、コンテンツや CSS を Git でバージョン管理できる利点がある。そしてなにより、静的サイトのホスティングは GitHub Pages ならば無料でできるらしい！
+
+問題は世の中に SSG の選択肢がありすぎること。いろいろ試して比較するのは面倒だし、そもそもそんなに凝ったことをしたいわけではないからこだわっても仕方がない気がする。GitHub Pages は Jekyll という古株の SSG をビルトインでサポートしているようで、GitHub Actions の設定とかしなくてもリポジトリへの push をトリガーにサイトをビルドしてデプロイしてくれるらしい。じゃあもうそれでいいじゃん、GitHub Pages が王様でいいじゃないかということで、Jekyll を使うことにした。
+
+一応 Jekyll を選ぶプラスの材料としては、目次 (Table of Contents) を出すのが簡単というのがある。正確には Jekyll が採用する kramdown という Markdown レンダラーの機能。すべての記事に目次を置きたいわけではないから、簡単な記述で記事ごとに制御できるのは良いと思った。
+
+```markdown
+* A markdown unordered list which will be replaced with the ToC, excluding the "Contents header" from above
+{:toc}
+```
+
+[HTML Converter \| kramdown](https://kramdown.gettalong.org/converter/html.html#toc)
+
+GitHub Codespaces を編集環境にする
+---------------------------------
+
+これが一番書きたかったこと。
+
+いくら GitHub Pages が自動で Jekyll でビルドしてデプロイしてくれるといっても、push してインターネットに公開されて初めて結果が見えるっていうのはイマイチなので、結局ローカルにも環境が欲しくなる。しかしラップトップなりデスクトップなり、そのとき触ってる端末ごとにいちいちセットアップするのは嫌だし、特に Windows に Ruby 環境作るのはいろいろハマりそうだしということで、[GitHub Codespaces](https://github.com/features/codespaces) を活用してみる良い機会ではないかと思った。
+
+Codespaces のデフォルトイメージには最初から ruby や bundler が入ってるけど、jekyll を手動でインストールしようとすると意外と躓きどころがあるので、インストール済みのイメージを使うのが無難。ただ、システムにインストールした jekyll が必要になるのは最初にプロジェクトを生成するときだけで、それ以降は「jekyll が生成した Gemfile で `bundle install` してインストールされた jekyll」を使うことになるので、デフォルトイメージに戻しても問題ないかもしれない。
+
+自分が環境を整えるためにやったことをメモしておく。
+
+* VS Code の Dev Containers 拡張の機能で Jekyll 用の devcontainer.json を生成。[ここ](https://github.com/devcontainers/templates/blob/main/src/jekyll/.devcontainer/devcontainer.json) から持ってきてもいい
+* コンテナ作成時に `bundle install` を実行するように設定
+
+```jsonc
+// devcontainer.json
+"postCreateCommand": "cd docs && bundle install"
+```
+
+* `jekyll serve` でプレビューする用の VS Code のビルドタスクを作成。[ここ](https://github.com/microsoft/vscode-dev-containers/blob/main/containers/jekyll/.vscode/tasks.json) から拝借
+
+`jekyll serve` でコンテナの localhost で listen し始めると、ポートフォワードしといたよってダイアログが出てきて、ポチッと押せばブラウザでプレビューが開けるの、あまりに良く出来てて感動してしまう。
+
+{: align="center" }
+<img src="/assets/codespaces-port-forwarded.png" width="70%">
+
+Codespaces はデフォルトの 2 コアインスタンスだと月 60 時間まで無料で使える。熱心に書いてると使い果たすこともあるかもしれないけど、そうしたら今度はほぼ同様のサービスを提供している [Gitpod](https://www.gitpod.io/) に移行してさらに 50 時間使うとかも出来てしまいそう (編集環境として使えること自体は確認済み)。もっとも、有料分もそこまで高いわけじゃないし、無料でホスティングしてもらってるなら編集環境にくらいお金落としてもいいとは思っている。
+
+冷静に考えると「ブラウザでどこからでも記事を編集・公開できる」というのは出来合いのブログサービスなら当たり前にできることなんだけどね。そこは広告なし無料ホスティング & Git 管理のためということで。
+
+参考資料
+--------
+
+* [インサイド Misskey Hub | Misskey Hub](https://misskey-hub.net/blog/2021-12-01-inside-misskey-hub.html)  
+SSG + GitHub Pages の良さをわかりやすく解説してくれている
