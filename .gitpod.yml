@@ -1,0 +1,2 @@
+tasks:
+  - init: cd docs && bundle install
