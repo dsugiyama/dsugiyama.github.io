@@ -1,2 +1,2 @@
 tasks:
-  - init: cd docs && bundle install
+  - init: cd docs && bundle install --path vendor/bundle
