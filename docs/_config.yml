@@ -30,6 +30,8 @@ url: "https://blog.others-step.dev" # the base hostname & protocol for your site
 twitter_username: _dssy
 # github_username:  jekyll
 
+timezone: Japan
+
 # Build settings
 theme: minima
 plugins:
