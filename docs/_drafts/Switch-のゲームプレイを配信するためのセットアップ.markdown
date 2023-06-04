@@ -32,6 +32,9 @@ HDR については、OBS 上でそのまま HDR で録画・配信すること�
 
 結果的に、全体のセットアップは以下のようになった。ヘッドホンやマイクの部分は有線でやってる人が多そうな中で、無線で実現できているのはなかなか良いのではないかと思う。
 
+{: align="center" }
+<img src="/assets/switch-broadcast-setup-1.png" width="80%">
+
 改良するとしたら
 ---------------
 
@@ -40,6 +43,9 @@ HDR については、OBS 上でそのまま HDR で録画・配信すること�
 加えて、経験上音声の伝送にアナログ接続を使うのは、ノイズや音量の問題が無かったとしても端子のコンディションで接触不良起こしたりして面倒なことが多いので、せっかくならアナログ接続を排除したい。今回の場合、音声分離器からベースステーションへの接続を 3.5 mm ではなく光デジタルにすればいい。ただ、光デジタルを受け取って無線で飛ばせるヘッドセットはおそらく相当限られていて[^optical-to-wireless]、前述の Arctis Nova Pro Wireless は非対応。ここでは自分が持っている [Arctis Pro Wireless](https://jp.steelseries.com/gaming-headsets/arctis-pro-wireless) を想定することにする。
 
 実際に試したわけじゃないけど、理想的には以下のようになるんじゃないか。
+
+{: align="center" }
+<img src="/assets/switch-broadcast-setup-2.png" width="80%">
 
 [^sasayaki-ghost]: [コメント読み上げオバケ (Sasayaki Ghost)](https://chrome.google.com/webstore/detail/sasayaki-ghost/flmpcpdnanjglhiokpheaenaokpjcljn) というブラウザ拡張を使っている。
 
