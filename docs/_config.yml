@@ -57,6 +57,9 @@ plugins:
 #   - vendor/gems/
 #   - vendor/ruby/
 
+header_pages:
+  -
+
 # Minima date format
 # refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
 minima:
