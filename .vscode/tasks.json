@@ -12,9 +12,6 @@
 				"isDefault": true
 			},
 			"isBackground": true,
-			"options": {
-				"cwd": "${workspaceFolder}/docs"
-			}
 		},
 		{
 			"label": "Build",

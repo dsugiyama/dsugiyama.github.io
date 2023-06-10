@@ -5,7 +5,7 @@
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
 	"image": "mcr.microsoft.com/devcontainers/jekyll:0-bullseye",
 
-	"postCreateCommand": "cd docs && bundle install",
+	"postCreateCommand": "bundle install",
 
 	"containerEnv": {
 		"TZ": "Japan",

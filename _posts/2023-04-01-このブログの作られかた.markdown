@@ -37,7 +37,7 @@ Codespaces のデフォルトイメージには最初から ruby や bundler が
 
 ```jsonc
 // devcontainer.json
-"postCreateCommand": "cd docs && bundle install"
+"postCreateCommand": "bundle install"
 ```
 
 * `jekyll serve` でプレビューする用の VS Code のビルドタスクを作成。[ここ](https://github.com/microsoft/vscode-dev-containers/blob/main/containers/jekyll/.vscode/tasks.json) から拝借
