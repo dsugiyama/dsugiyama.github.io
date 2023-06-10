@@ -44,8 +44,9 @@ Codespaces のデフォルトイメージには最初から ruby や bundler が
 
 `jekyll serve` でコンテナの localhost で listen し始めると、ポートフォワードしといたよってダイアログが出てきて、ポチッと押せばブラウザでプレビューが開けるの、あまりに良く出来てて感動してしまう。
 
-{: align="center" }
-<img src="/assets/codespaces-port-forwarded.png" width="70%">
+<p align="center">
+	<img src="/assets/codespaces-port-forwarded.png" width="70%">
+</p>
 
 Codespaces はデフォルトの 2 コアインスタンスだと月 60 時間まで無料で使える。熱心に書いてると使い果たすこともあるかもしれないけど、そうしたら今度はほぼ同様のサービスを提供している [Gitpod](https://www.gitpod.io/) に移行してさらに 50 時間使うとかも出来てしまいそう (編集環境として使えること自体は確認済み)。もっとも、有料分もそこまで高いわけじゃないし、無料でホスティングしてもらってるなら編集環境にくらいお金落としてもいいとは思っている。
 

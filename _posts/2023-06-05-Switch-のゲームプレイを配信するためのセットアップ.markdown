@@ -32,8 +32,9 @@ HDR については、OBS 上でそのまま HDR で録画・配信すること�
 
 結果的に、全体のセットアップは以下のようになった。ヘッドホンやマイクの部分は有線でやってる人が多そうな中で、無線で実現できているのはなかなか良いのではないかと思う。
 
-{: align="center" }
-<img src="/assets/switch-broadcast-setup-1.png" width="85%">
+<p align="center">
+	<img src="/assets/switch-broadcast-setup-1.png" width="85%">
+</p>
 
 改良するとしたら
 ---------------
@@ -44,8 +45,9 @@ HDR については、OBS 上でそのまま HDR で録画・配信すること�
 
 実際に試したわけじゃないけど、理想的には以下のようになるんじゃないか。
 
-{: align="center" }
-<img src="/assets/switch-broadcast-setup-2.png" width="85%">
+<p align="center">
+	<img src="/assets/switch-broadcast-setup-2.png" width="85%">
+</p>
 
 [^sasayaki-ghost]: [コメント読み上げオバケ (Sasayaki Ghost)](https://chrome.google.com/webstore/detail/sasayaki-ghost/flmpcpdnanjglhiokpheaenaokpjcljn) というブラウザ拡張を使っている。
 
