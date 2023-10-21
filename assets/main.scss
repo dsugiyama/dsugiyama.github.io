@@ -19,3 +19,8 @@ body {
 		margin-bottom: 12px;
 	}
 }
+
+.mastodon-embed, .youtube-embed {
+	display: block;
+	margin: 0 auto;
+}
