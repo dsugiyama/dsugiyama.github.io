@@ -46,8 +46,8 @@ title:  "Small Form Factor な PC を組んだ"
 |SSD|Western Digital WD_BLACK SN850X 2TB|¥22,051|
 |電源|Corsair SF750|¥24,302|
 |電源ケーブル|MODDIY ATX 3.0 PCIe 5.0 600W Triple 8 Pin to 12VHPWR 16 Pin Power Cable|¥4,792|
-|CPUクーラー|Thermalright AXP90-X47 FULL|¥4,806|
-|CPUファン|Noctua NF-A9x14 HS-PWM chromax.black.swap|¥3,278|
+|CPU クーラー|Thermalright AXP90-X47 FULL|¥4,806|
+|CPU ファン|Noctua NF-A9x14 HS-PWM chromax.black.swap|¥3,278|
 |ケースファン|Phanteks PH-F120T30 (x2)|¥11,541|
 |(合計)||¥434,063|
 
