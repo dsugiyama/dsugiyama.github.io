@@ -23,4 +23,5 @@ body {
 .mastodon-embed, .youtube-embed {
 	display: block;
 	margin: 0 auto;
+	max-width: 100%;
 }
