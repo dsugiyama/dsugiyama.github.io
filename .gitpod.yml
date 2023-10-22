@@ -1,5 +1,5 @@
 tasks:
-  - init: bundle install --path vendor/bundle
+  - init: bundle install
 vscode:
   extensions:
     - donjayamanne.githistory
