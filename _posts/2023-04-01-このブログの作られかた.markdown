@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: my-post
 title:  "このブログの作られかた"
 date:   2023-03-31 23:59:59 +0900
 ---

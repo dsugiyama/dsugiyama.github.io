@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: my-post
 title:  "WILD HEARTS クリア後の感想"
 date:   2023-03-29 23:59:59 +0900
 ---

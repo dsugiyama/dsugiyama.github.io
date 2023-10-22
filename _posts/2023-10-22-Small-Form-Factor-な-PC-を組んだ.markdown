@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: my-post
 title:  "Small Form Factor な PC を組んだ"
 ---
 

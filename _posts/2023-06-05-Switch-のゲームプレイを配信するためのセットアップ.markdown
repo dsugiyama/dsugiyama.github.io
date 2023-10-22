@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: my-post
 title:  "Switch のゲームプレイを配信するためのセットアップ"
 date:   2023-06-05 02:21:00 +0900
 ---
