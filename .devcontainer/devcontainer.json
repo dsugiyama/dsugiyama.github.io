@@ -5,7 +5,10 @@
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
 	"image": "mcr.microsoft.com/devcontainers/jekyll:0-bullseye",
 
-	"postCreateCommand": "bundle install",
+	"postCreateCommand": {
+		"bundler": "bundle install",
+		"git": "git config pull.rebase true",
+	},
 
 	"containerEnv": {
 		"BUNDLE_PATH": "vendor/bundle",

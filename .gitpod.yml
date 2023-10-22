@@ -1,5 +1,7 @@
 tasks:
-  - init: bundle install
+  - init: |
+    bundle install
+    git config pull.rebase true
 vscode:
   extensions:
     - donjayamanne.githistory
