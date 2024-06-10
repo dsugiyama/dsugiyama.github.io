@@ -28,7 +28,6 @@ title: dssy's blog
 baseurl: "" # the subpath of your site, e.g. /blog
 domain: blog.others-step.dev
 url: "https://blog.others-step.dev" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: _dssy
 mastodon:
   - username: dssy
     instance: fedibird.com
