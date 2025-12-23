@@ -8,8 +8,8 @@ body {
 	font-kerning: auto;
 }
 
-.img-caption {
-	font-size: 85%;
+.post-title {
+	line-height: 1.15;
 }
 
 .footnotes {
@@ -26,4 +26,8 @@ body {
 	display: block;
 	margin: 0 auto;
 	max-width: 100%;
+}
+
+.img-caption {
+	font-size: 85%;
 }
