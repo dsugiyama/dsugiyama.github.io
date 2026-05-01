@@ -47,12 +47,12 @@ Super Nova はドングルを使用して XInput モードで PC と接続する
 
 <p align="center">
 	<img src="/assets/super-nova-xinput.png" width="70%"><br>
-	<span class="img-caption">デフォルトでは Xbox 360 という名前なので、区別しやすい名前を付けておくといい。</span>
+	<span class="img-caption">コントローラー側のデバイス。デフォルトでは Xbox 360 という名前なので、区別しやすい名前を付けておくといい。</span>
 </p>
 
 <p align="center">
 	<img src="/assets/gamesir-dongle.png" width="70%"><br>
-	<span class="img-caption">この画面で左を選んでキーボードとして初期化する。</span>
+	<span class="img-caption">キーボード側のデバイス。この画面で左を選んでキーボードとして初期化する。</span>
 </p>
 
 このまま 2 つの別個のデバイスとして扱うこともできるが、常にセットで存在するものはグループ化しておくといい。それぞれのデバイス向けにコンフィグを作り、それぞれで Autodetect を設定しなければいけないところを、まとめて管理できるようになる。
