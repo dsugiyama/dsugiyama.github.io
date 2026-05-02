@@ -3,9 +3,9 @@ layout: my-post
 title:  "Small Form Factor な PC を組んだ"
 ---
 
-<p align="center">
-	<img src="/assets/pc-size-comparison.jpg" width="70%">
-</p>
+<figure>
+	<img src="/assets/pc-size-comparison.jpg" width="85%">
+</figure>
 
 * A markdown unordered list which will be replaced with the ToC, excluding the "Contents header" from above
 {:toc}
@@ -30,9 +30,9 @@ title:  "Small Form Factor な PC を組んだ"
 構成
 ====
 
-<p align="center">
-	<img src="/assets/pc-parts.jpg" width="50%">
-</p>
+<figure>
+	<img src="/assets/pc-parts.jpg" width="60%">
+</figure>
 
 全体の構成は以下のとおり。前述の Optimum Tech の動画をベースに、CPU を Zen 4 世代にしてマザボとクーラーを合わせて変更した感じ。
 
@@ -62,10 +62,10 @@ title:  "Small Form Factor な PC を組んだ"
 よかったこと
 ===========
 
-<p align="center">
-	<img src="/assets/pc-size-comparison.jpg" width="50%"><br>
-	<span class="img-caption">(再掲) 見よこのサイズ感！ PS5 (初期型) とそう変わらないのに、遥かに高性能。</span>
-</p>
+<figure>
+	<img src="/assets/pc-size-comparison.jpg" width="60%">
+	<figcaption>(再掲) 見よこのサイズ感！ PS5 (初期型) とそう変わらないのに、遥かに高性能。</figcaption>
+</figure>
 
 実用的な面においては、やっぱり机の上に無理なくおけるサイズになったのが便利。実際、この PC が組み上がってからも前の PC との比較のためにマウスとキーボードを繋ぎ変えたり、モニターやキャプボとの接続であれこれ試行錯誤をしたりしたので、背面の端子類にすぐアクセスできるのはとても助かっている。
 
@@ -75,16 +75,19 @@ title:  "Small Form Factor な PC を組んだ"
 
 お気に入りポイントその 1、Titanium カラーの FormD T1 と 4080 FE のマッチング。色といいサイズといい、あらかじめ想定されていたかのように調和しているし、サイドパネルのメッシュを通して見えるライティングが超かっこいい。
 
-<p align="center">
-	<img src="/assets/FormD-T1-titanium-FE.jpg" width="70%">
-	<img src="/assets/4080-FE-lighting.jpg" width="70%">
-</p>
+<figure>
+	<img src="/assets/FormD-T1-titanium-FE.jpg" width="85%">
+</figure>
+
+<figure>
+	<img src="/assets/4080-FE-lighting.jpg" width="85%">
+</figure>
 
 お気に入りポイントその 2、CPU ファンの向こうに見える銅製ヒートシンク。全体的にブラックやグレーで統一されたコンポーネントの中でいいアクセントになっているし、この奥に高性能な CPU が潜んでいることを思わせる感じでよき。
 
-<p align="center">
-	<img src="/assets/copper-heatsink.jpg" width="70%">
-</p>
+<figure>
+	<img src="/assets/copper-heatsink.jpg" width="85%">
+</figure>
 
 気になること
 ===========

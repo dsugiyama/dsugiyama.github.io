@@ -22,10 +22,10 @@ reWASD を愛用していて気になるポイントの一つは[対応デバイ
 
 コントローラーはここでは GameSir Super Nova を使う。GameSir の場合、専用アプリの GameSir Connect がキーボード割り当ての機能を持っているため、Cyclone 2 などの Connect に対応している製品なら同じことができるのではないかと思うが、実際のところは各自で確認してほしい。
 
-<p align="center">
-	<img src="/assets/gamesir-connect-supported-controllers.png" width="70%"><br>
-	<span class="img-caption">ここに載っているものならたぶん使えるはず。</span>
-</p>
+<figure>
+	<img src="/assets/gamesir-connect-supported-controllers.png" width="85%">
+	<figcaption>ここに載っているものならたぶん使えるはず。</figcaption>
+</figure>
 
 Connect はけっこう多機能で、今回の前提であるキーボード割り当てはもちろん、複数ボタンの同時押しやマクロにも対応しているが、Super Nova は Cyclone 2 と違ってシフトレイヤーには非対応だし、プロファイルも 1 つしか持てないため[^connect-feature-differences]、reWASD で管理するメリットは大きい。
 
@@ -34,9 +34,9 @@ Connect はけっこう多機能で、今回の前提であるキーボード割
 
 reWASD でマップしたい追加ボタンに、キーボードの何らかのキーを割り当てる。ここで割り当てたキーの入力は reWASD がマスクしてゲームには伝わらないため、ゲームが使っていなそうなキーを選ぶなどの配慮は必要ない。強いて言えば、reWASD の前に Windows システムが拾ってしまう可能性を排除するため、Windows キーなどは避けたほうがいいのかもしれない (実際にそのような現象を観測したことはないが)。追加ボタンに自分がわかりやすい順番を付けて、数字キーを 1 から割り当てていくとかでいいだろう。
 
-<p align="center">
-	<img src="/assets/back-buttons-to-keyboard.png" width="70%"><br>
-</p>
+<figure>
+	<img src="/assets/back-buttons-to-keyboard.png" width="85%">
+</figure>
 
 reWASD での設定
 ---------------
@@ -45,31 +45,31 @@ reWASD での設定
 
 Super Nova はドングルを使用して XInput モードで PC と接続すると、コントローラーとキーボードという 2 つのデバイスを Windows に見せるようになっている[^xinput-only] [^mouse-input]。何らかの常駐プロセスが入力を変換するのではなく、ドングル自体がキーボードとしても振る舞うことでキー入力を実現しているわけだ。実際に reWASD を開くと、この 2 つのデバイスが UI 上に存在するのがわかる。
 
-<p align="center">
-	<img src="/assets/super-nova-xinput.png" width="70%"><br>
-	<span class="img-caption">コントローラー側のデバイス。デフォルトでは Xbox 360 という名前なので、区別しやすい名前を付けておくといい。</span>
-</p>
+<figure>
+	<img src="/assets/super-nova-xinput.png" width="85%">
+	<figcaption>コントローラー側のデバイス。デフォルトでは Xbox 360 という名前なので、区別しやすい名前を付けておくといい。</figcaption>
+</figure>
 
-<p align="center">
-	<img src="/assets/gamesir-dongle.png" width="70%"><br>
-	<span class="img-caption">キーボード側のデバイス。この画面で左を選んでキーボードとして初期化する。</span>
-</p>
+<figure>
+	<img src="/assets/gamesir-dongle.png" width="85%">
+	<figcaption>キーボード側のデバイス。この画面で左を選んでキーボードとして初期化する。</figcaption>
+</figure>
 
 このまま 2 つの別個のデバイスとして扱うこともできるが、常にセットで存在するものはグループ化しておくといい。それぞれのデバイス向けにコンフィグを作り、それぞれで Autodetect を設定しなければいけないところを、まとめて管理できるようになる。
 
-<p align="center">
-	<img src="/assets/device-grouping.png" width="70%"><br>
-</p>
+<figure>
+	<img src="/assets/device-grouping.png" width="85%">
+</figure>
 
 コンフィグの編集画面に入るとデバイスを選択するタブがあるため、キーボード側を選択し、メーカー製アプリで設定したキーを元にマッピングを追加していく。マップ元がキーボードであってもマップ先にはコントローラー入力も選ぶことができ、マクロでもレイヤーシフトでも何でも設定することができる。ただし注意として、元のキーがゲームに伝わらないようにミュートしておくこと。マップ先に選ぶアクションによっては、ミュートを強く勧めるダイアログを出してくれるようだ。
 
-<p align="center">
-	<img src="/assets/map-from-keyboard.png" width="85%"><br>
-</p>
+<figure>
+	<img src="/assets/map-from-keyboard.png" width="100%">
+</figure>
 
-<p align="center">
-	<img src="/assets/recommend-mute.png" width="50%"><br>
-</p>
+<figure>
+	<img src="/assets/recommend-mute.png" width="60%">
+</figure>
 
 これで、過去記事「[ソウルライクを快適にするコントローラー設定](/2023/06/11/ソウルライクを快適にするコントローラー設定.html)」で紹介した複数レイヤーを駆使したコンフィグのように、reWASD ならではの汎用性を得ることができる。reWASD の複数種類のデバイスを扱える能力と洗練された GUI はとても素晴らしく、やろうとしていることはだいぶ変なのに結果的にスマートに解決することができた。個人的にはコントローラーのカスタマイズはやっぱり reWASD が最強だなという思いを強くした。
 

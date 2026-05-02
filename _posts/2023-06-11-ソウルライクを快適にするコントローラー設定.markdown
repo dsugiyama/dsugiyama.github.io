@@ -32,9 +32,9 @@ reWASD は単純なボタンのリマップにとどまらず、マクロ的な�
 
 単純な設定だが、これはとてもうまくいく。押してから離すまでの時間が短すぎるとうまく認識されないため、ディレイをある程度長めにするのがポイント。ゲームが常時 60 fps で動作するという前提なら、1 フレームの時間である 16.66... ms 以上にしておけば安定して認識されるのではないかと思う。
 
-<p align="center">
-	<img src="/assets/reWASD-combo.png" width="70%">
-</p>
+<figure>
+	<img src="/assets/reWASD-combo.png" width="85%">
+</figure>
 
 reWASD 設定 (ADVANCED)
 ----------------------
@@ -57,10 +57,10 @@ reWASD 設定 (ADVANCED)
   * × ボタンを離したときに Shift-layer 1 へ戻るように設定する
 * reWASD アプリの環境設定 → 全般にある「**シフトレイヤーを切り替えた時、押し続けられているボタンを新しいマッピングで押し直す**」を有効にする
 
-<p align="center">
-	<img src="/assets/reWASD-press-and-shift.png" width="70%"><br>
-	<span class="img-caption">レイヤーのシフトとボタンのマッピングを同時に適用することができる。</span>
-</p>
+<figure>
+	<img src="/assets/reWASD-press-and-shift.png" width="85%">
+	<figcaption>レイヤーのシフトとボタンのマッピングを同時に適用することができる。</figcaption>
+</figure>
 
 ポイントは、背面でダッシュしている間は layer 1 にシフトすることで × ボタンに別の機能を持たせていること。そして、「シフトレイヤーを切り替えた時～」の設定と layer 2 の背面の「継承しない」により、すでに押されているボタンを別のボタンから離すという動作を実現していること。layer 1 の 34 ms のディレイは、layer 2 へのシフトによって押されていたボタンが離され、それがゲームに認識されるまでにこのくらいの時間が必要なようだったので入れている。
 
